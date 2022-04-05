@@ -16,6 +16,9 @@
 		3F81346927FC91FA00F36172 /* ExpenseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81346827FC91FA00F36172 /* ExpenseTests.swift */; };
 		3F81347427FC91FA00F36172 /* ExpenseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81347327FC91FA00F36172 /* ExpenseUITests.swift */; };
 		3F81348227FC94BC00F36172 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81348127FC94BC00F36172 /* SecondViewController.swift */; };
+		3FCB1C8127FCA0FC00F5A0DA /* ExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB1C8027FCA0FC00F5A0DA /* ExpenseViewController.swift */; };
+		3FCB1C8327FCA16000F5A0DA /* IncomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB1C8227FCA16000F5A0DA /* IncomeViewController.swift */; };
+		3FCB1C8527FCA2AF00F5A0DA /* GraphsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB1C8427FCA2AF00F5A0DA /* GraphsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		3F81347327FC91FA00F36172 /* ExpenseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseUITests.swift; sourceTree = "<group>"; };
 		3F81347527FC91FA00F36172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F81348127FC94BC00F36172 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		3FCB1C8027FCA0FC00F5A0DA /* ExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewController.swift; sourceTree = "<group>"; };
+		3FCB1C8227FCA16000F5A0DA /* IncomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeViewController.swift; sourceTree = "<group>"; };
+		3FCB1C8427FCA2AF00F5A0DA /* GraphsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,9 @@
 				3F81345C27FC91FA00F36172 /* LaunchScreen.storyboard */,
 				3F81345F27FC91FA00F36172 /* Info.plist */,
 				3F81348127FC94BC00F36172 /* SecondViewController.swift */,
+				3FCB1C8027FCA0FC00F5A0DA /* ExpenseViewController.swift */,
+				3FCB1C8227FCA16000F5A0DA /* IncomeViewController.swift */,
+				3FCB1C8427FCA2AF00F5A0DA /* GraphsViewController.swift */,
 			);
 			path = Expense;
 			sourceTree = "<group>";
@@ -263,6 +272,9 @@
 			files = (
 				3F81348227FC94BC00F36172 /* SecondViewController.swift in Sources */,
 				3F81345627FC91F900F36172 /* ViewController.swift in Sources */,
+				3FCB1C8127FCA0FC00F5A0DA /* ExpenseViewController.swift in Sources */,
+				3FCB1C8327FCA16000F5A0DA /* IncomeViewController.swift in Sources */,
+				3FCB1C8527FCA2AF00F5A0DA /* GraphsViewController.swift in Sources */,
 				3F81345227FC91F900F36172 /* AppDelegate.swift in Sources */,
 				3F81345427FC91F900F36172 /* SceneDelegate.swift in Sources */,
 			);
