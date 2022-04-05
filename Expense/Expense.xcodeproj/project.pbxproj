@@ -15,6 +15,7 @@
 		3F81345E27FC91FA00F36172 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F81345C27FC91FA00F36172 /* LaunchScreen.storyboard */; };
 		3F81346927FC91FA00F36172 /* ExpenseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81346827FC91FA00F36172 /* ExpenseTests.swift */; };
 		3F81347427FC91FA00F36172 /* ExpenseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81347327FC91FA00F36172 /* ExpenseUITests.swift */; };
+		3F81348227FC94BC00F36172 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81348127FC94BC00F36172 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3F81346F27FC91FA00F36172 /* ExpenseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpenseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F81347327FC91FA00F36172 /* ExpenseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseUITests.swift; sourceTree = "<group>"; };
 		3F81347527FC91FA00F36172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F81348127FC94BC00F36172 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				3F81345A27FC91FA00F36172 /* Assets.xcassets */,
 				3F81345C27FC91FA00F36172 /* LaunchScreen.storyboard */,
 				3F81345F27FC91FA00F36172 /* Info.plist */,
+				3F81348127FC94BC00F36172 /* SecondViewController.swift */,
 			);
 			path = Expense;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F81348227FC94BC00F36172 /* SecondViewController.swift in Sources */,
 				3F81345627FC91F900F36172 /* ViewController.swift in Sources */,
 				3F81345227FC91F900F36172 /* AppDelegate.swift in Sources */,
 				3F81345427FC91F900F36172 /* SceneDelegate.swift in Sources */,
