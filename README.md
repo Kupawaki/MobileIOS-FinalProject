@@ -8,4 +8,4 @@ Link to use Firebase for IOS apps: https://www.youtube.com/watch?v=JV9Oqyle3iE
 
 
 ## Heres the Plan - Its a Good One
-![title](plan.png)
+![alt text](https://github.com/Kupawaki/MobileIOS-FinalProject/blob/main/plan.jpg?raw=true)
