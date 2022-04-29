@@ -4,26 +4,46 @@
 //
 //  Created by student on 4/5/22.
 //
-
 import UIKit
+import Firebase
 
-class IncomeViewController: UIViewController {
-
-    override func viewDidLoad() {
+class IncomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
+{
+    @IBOutlet weak var incomeTV: UITableView!
+    
+    let ref = Database.database().reference()
+    var indivIncomes : [String] = []
+    var income = NSDictionary()
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        fetchData()
+        incomeTV.delegate = self
+        incomeTV.dataSource = self
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return indivIncomes.count
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = incomeTV.dequeueReusableCell(withIdentifier: "reusableCell", for: indexPath)
+        
+        cell.textLabel?.text = indivIncomes[indexPath.row]
+        
+        return cell
+    }
+    
+    func fetchData()
+    {
+        ref.child("income").observeSingleEvent(of: .value)
+        { [self]snapshot in
+            let income = snapshot.value as! NSDictionary
+            self.indivIncomes = income.allKeys as! [String]
+            self.incomeTV.reloadData()
+        }
+    }
 }

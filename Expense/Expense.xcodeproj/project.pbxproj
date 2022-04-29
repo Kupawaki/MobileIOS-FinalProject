@@ -111,8 +111,6 @@
 		3F81345027FC91F900F36172 /* Expense */ = {
 			isa = PBXGroup;
 			children = (
-				3F81345127FC91F900F36172 /* AppDelegate.swift */,
-				3F81345327FC91F900F36172 /* SceneDelegate.swift */,
 				3F81345527FC91F900F36172 /* ViewController.swift */,
 				3F81348127FC94BC00F36172 /* SecondViewController.swift */,
 				3FCB1C8027FCA0FC00F5A0DA /* ExpenseViewController.swift */,
@@ -123,6 +121,8 @@
 				3F81345A27FC91FA00F36172 /* Assets.xcassets */,
 				3F81345C27FC91FA00F36172 /* LaunchScreen.storyboard */,
 				3F81345F27FC91FA00F36172 /* Info.plist */,
+				3F81345127FC91F900F36172 /* AppDelegate.swift */,
+				3F81345327FC91F900F36172 /* SceneDelegate.swift */,
 			);
 			path = Expense;
 			sourceTree = "<group>";
