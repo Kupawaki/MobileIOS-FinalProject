@@ -190,8 +190,14 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zmI-v6-Ncu">
-                                <rect key="frame" x="159" y="713" width="97" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zmI-v6-Ncu">
+                                <rect key="frame" x="20" y="696" width="203" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DtV-we-atd">
+                                <rect key="frame" x="20" y="738" width="203" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -204,12 +210,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alk-pX-g9r">
-                                <rect key="frame" x="37" y="788" width="93" height="31"/>
+                                <rect key="frame" x="20" y="780" width="93" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add a Value"/>
+                                <connections>
+                                    <action selector="addValueBTNOnClick:" destination="Z50-Kx-FcP" eventType="touchUpInside" id="gRE-kM-KSd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyL-VZ-B9J">
-                                <rect key="frame" x="315" y="788" width="50" height="31"/>
+                                <rect key="frame" x="344" y="780" width="50" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Graphs"/>
                                 <connections>
@@ -228,6 +237,8 @@
                     <navigationItem key="navigationItem" id="iaN-WK-4US"/>
                     <connections>
                         <outlet property="incomeTV" destination="f0K-FZ-58e" id="b6b-pw-gxL"/>
+                        <outlet property="nameTF" destination="zmI-v6-Ncu" id="mJ3-Fl-lIt"/>
+                        <outlet property="valueTF" destination="DtV-we-atd" id="9HT-0S-hSb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yMK-C7-UCV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
