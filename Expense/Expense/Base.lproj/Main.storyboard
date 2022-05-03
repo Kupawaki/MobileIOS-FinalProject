@@ -80,12 +80,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dpV-Fz-ob7">
-                                <rect key="frame" x="159" y="720" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Expense" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQm-Vp-i8r">
                                 <rect key="frame" x="20" y="88" width="374" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -97,6 +91,9 @@
                                 <rect key="frame" x="39" y="796" width="93" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add a Value"/>
+                                <connections>
+                                    <action selector="addExpenseBTNOnClick:" destination="dPd-3p-1KW" eventType="touchUpInside" id="g3F-ud-iT3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRF-gs-LDM">
                                 <rect key="frame" x="313" y="796" width="50" height="31"/>
@@ -106,6 +103,18 @@
                                     <segue destination="ugp-7m-zvc" kind="show" identifier="ExpenseGraphSegue" id="qF7-jp-BGS"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dyO-6D-M1Z">
+                                <rect key="frame" x="20" y="696" width="203" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WsC-D1-glz">
+                                <rect key="frame" x="20" y="738" width="203" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tD8-G7-0Hn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -118,6 +127,8 @@
                     <navigationItem key="navigationItem" id="AuB-Sp-4n9"/>
                     <connections>
                         <outlet property="expenseTV" destination="nyt-nD-gdt" id="9Dd-7L-yef"/>
+                        <outlet property="nameTF" destination="dyO-6D-M1Z" id="fvw-wl-qqe"/>
+                        <outlet property="valueTF" destination="WsC-D1-glz" id="M2M-i5-033"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CVb-X6-AhX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -247,7 +258,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fgV-JB-GH1"/>
+        <segue reference="qF7-jp-BGS"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
