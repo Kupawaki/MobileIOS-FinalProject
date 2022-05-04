@@ -21,6 +21,8 @@
 		3FCB1C8127FCA0FC00F5A0DA /* ExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB1C8027FCA0FC00F5A0DA /* ExpenseViewController.swift */; };
 		3FCB1C8327FCA16000F5A0DA /* IncomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB1C8227FCA16000F5A0DA /* IncomeViewController.swift */; };
 		3FCB1C8527FCA2AF00F5A0DA /* GraphsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB1C8427FCA2AF00F5A0DA /* GraphsViewController.swift */; };
+		3FD94B7A282335A300FDE3BA /* GraphsSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD94B79282335A300FDE3BA /* GraphsSwiftUI.swift */; };
+		3FD94B7D2823372200FDE3BA /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 3FD94B7C2823372200FDE3BA /* SwiftUICharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +51,6 @@
 		3F81345827FC91F900F36172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F81345A27FC91FA00F36172 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F81345D27FC91FA00F36172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3F81345F27FC91FA00F36172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F81346427FC91FA00F36172 /* ExpenseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpenseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F81346827FC91FA00F36172 /* ExpenseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTests.swift; sourceTree = "<group>"; };
 		3F81346A27FC91FA00F36172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +61,7 @@
 		3FCB1C8027FCA0FC00F5A0DA /* ExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewController.swift; sourceTree = "<group>"; };
 		3FCB1C8227FCA16000F5A0DA /* IncomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeViewController.swift; sourceTree = "<group>"; };
 		3FCB1C8427FCA2AF00F5A0DA /* GraphsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphsViewController.swift; sourceTree = "<group>"; };
+		3FD94B79282335A300FDE3BA /* GraphsSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphsSwiftUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F140698281AE37400B757BD /* FirebaseDatabase in Frameworks */,
+				3FD94B7D2823372200FDE3BA /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,11 +119,11 @@
 				3FCB1C8027FCA0FC00F5A0DA /* ExpenseViewController.swift */,
 				3FCB1C8227FCA16000F5A0DA /* IncomeViewController.swift */,
 				3FCB1C8427FCA2AF00F5A0DA /* GraphsViewController.swift */,
+				3FD94B79282335A300FDE3BA /* GraphsSwiftUI.swift */,
 				3F14069B281AED4700B757BD /* GoogleService-Info.plist */,
 				3F81345727FC91F900F36172 /* Main.storyboard */,
 				3F81345A27FC91FA00F36172 /* Assets.xcassets */,
 				3F81345C27FC91FA00F36172 /* LaunchScreen.storyboard */,
-				3F81345F27FC91FA00F36172 /* Info.plist */,
 				3F81345127FC91F900F36172 /* AppDelegate.swift */,
 				3F81345327FC91F900F36172 /* SceneDelegate.swift */,
 			);
@@ -163,6 +166,7 @@
 			name = Expense;
 			packageProductDependencies = (
 				3F140697281AE37400B757BD /* FirebaseDatabase */,
+				3FD94B7C2823372200FDE3BA /* SwiftUICharts */,
 			);
 			productName = Expense;
 			productReference = 3F81344E27FC91F900F36172 /* Expense.app */;
@@ -237,6 +241,7 @@
 			mainGroup = 3F81344527FC91F900F36172;
 			packageReferences = (
 				3F140696281AE37400B757BD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				3FD94B7B2823372200FDE3BA /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = 3F81344F27FC91F900F36172 /* Products */;
 			projectDirPath = "";
@@ -288,6 +293,7 @@
 				3FCB1C8327FCA16000F5A0DA /* IncomeViewController.swift in Sources */,
 				3FCB1C8527FCA2AF00F5A0DA /* GraphsViewController.swift in Sources */,
 				3F81345227FC91F900F36172 /* AppDelegate.swift in Sources */,
+				3FD94B7A282335A300FDE3BA /* GraphsSwiftUI.swift in Sources */,
 				3F81345427FC91F900F36172 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -625,6 +631,14 @@
 				minimumVersion = 8.15.0;
 			};
 		};
+		3FD94B7B2823372200FDE3BA /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.5;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -632,6 +646,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3F140696281AE37400B757BD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabase;
+		};
+		3FD94B7C2823372200FDE3BA /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FD94B7B2823372200FDE3BA /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
